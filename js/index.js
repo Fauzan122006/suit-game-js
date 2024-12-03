@@ -58,6 +58,9 @@ Swal.fire({
       title: title,
       html: message,
       icon: icon,
+      willClose: () => {
+        location.reload(); // Refresh halaman saat dialog ditutup
+      },
     });
   }
 });
